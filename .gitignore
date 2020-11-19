@@ -128,8 +128,14 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# ignore csv files
+# Ignore csv files
 *.csv
 
-# ignore zip files
+# Ignore zip files
 *.zip
+
+# Ignore .vscode folders
+.vscode/
+
+# Ignore dask-worker-space
+dask-worker-space/
