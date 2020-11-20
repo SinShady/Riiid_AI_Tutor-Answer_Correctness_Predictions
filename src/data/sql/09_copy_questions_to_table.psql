@@ -1,0 +1,2 @@
+-- Copy the csv contents of the questions data into the table
+COPY questions FROM STDIN WITH (FORMAT CSV);

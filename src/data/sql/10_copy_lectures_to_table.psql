@@ -1,0 +1,2 @@
+-- Copy the csv contents of the lectures data into the table
+COPY lectures FROM STDIN WITH (FORMAT CSV);

@@ -1,0 +1,2 @@
+-- Copy the csv contents of the train data into the table
+COPY train FROM STDIN WITH (FORMAT CSV);

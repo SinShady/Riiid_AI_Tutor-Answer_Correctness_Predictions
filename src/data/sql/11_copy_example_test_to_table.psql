@@ -1,0 +1,2 @@
+-- Copy the csv contents of the example_test data into the table
+COPY example_test FROM STDIN WITH (FORMAT CSV);
