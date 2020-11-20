@@ -1,0 +1,2 @@
+-- Copy the csv contents of the 2017 WA jobs data into the table
+COPY wa_jobs_2017 FROM STDIN WITH (FORMAT CSV);
