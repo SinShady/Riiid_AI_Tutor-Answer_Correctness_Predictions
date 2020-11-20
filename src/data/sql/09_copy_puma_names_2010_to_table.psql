@@ -1,0 +1,2 @@
+-- Copy the txt contents of the 2010 PUMA names data into the table
+COPY puma_names_2010 FROM STDIN WITH (FORMAT CSV);

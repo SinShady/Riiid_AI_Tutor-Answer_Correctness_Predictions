@@ -1,0 +1,2 @@
+-- Copy the csv contents of the WA geographic crosswalk data into the table
+COPY wa_geo_xwalk FROM STDIN WITH (FORMAT CSV);

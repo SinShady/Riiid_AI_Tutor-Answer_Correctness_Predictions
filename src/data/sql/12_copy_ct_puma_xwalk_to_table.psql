@@ -1,0 +1,2 @@
+-- Copy the csv contents of the census tract to puma geographic crosswalk data into the table
+COPY ct_puma_xwalk FROM STDIN WITH (FORMAT CSV);
