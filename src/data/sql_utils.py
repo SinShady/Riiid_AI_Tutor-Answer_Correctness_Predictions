@@ -2,7 +2,7 @@ import psycopg2
 import pandas as pd
 import os
 
-DBNAME = "riiid-education"
+DBNAME = "riiid_education"
 
 def create_database_and_tables():
     create_database()
@@ -25,7 +25,7 @@ def create_database():
 
     # un-comment this line if you already have a database called
     # `opportunity_youth` and you want to drop it
-    # execute_sql_script(conn, "01_drop_old_database.sql")
+    execute_sql_script(conn, "01_drop_old_database.sql")
     execute_sql_script(conn, "02_create_new_database.sql")
 
     conn.close()
@@ -54,7 +54,7 @@ def create_train_table(conn):
     """
     Create a table for the train data
     """
-    execute_sql_script(conn, "03_train_table.sql")
+    execute_sql_script(conn, "03_create_train_table.sql")
 
 
 def create_questions_table(conn):
@@ -151,7 +151,7 @@ def copy_csv_to_example_sample_submission_table(conn, csv_file):
     Copy the csv contents of the census tract to example sample submission data
     into the table
     """
-    COPY_EXAMPLE_SAMPLE_SUBMISSION = "12_copy_ct_example_sample_submissionk_to_table.psql"
+    COPY_EXAMPLE_SAMPLE_SUBMISSION = "12_copy_example_sample_submission_to_table.psql"
     copy_expert_psql_script(conn, COPY_EXAMPLE_SAMPLE_SUBMISSION, csv_file)
 
 

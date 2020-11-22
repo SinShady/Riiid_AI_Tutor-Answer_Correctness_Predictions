@@ -4,6 +4,6 @@ DROP TABLE IF EXISTS example_sample_submission;
 CREATE TABLE example_sample_submission
 (
     row_id INTEGER,
-    answered_correctly NUMERIC(5),
+    answered_correctly INTEGER,
     group_num INTEGER
 );

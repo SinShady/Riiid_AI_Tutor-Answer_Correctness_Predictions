@@ -6,5 +6,5 @@ CREATE TABLE lectures
   lecture_id INTEGER,
   tag INTEGER,
   part INTEGER,
-  type_of CHAR(20),
+  type_of CHAR(20)
 );

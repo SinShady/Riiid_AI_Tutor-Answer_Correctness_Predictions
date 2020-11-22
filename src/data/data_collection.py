@@ -29,7 +29,7 @@ def collect_all_data_files():
         "questions": collect_questions_data(),
         "lectures": collect_lectures_data(),
         "example_test": collect_example_test_data(),
-        "example_sample_submission": collect_example_sample_submission_data()
+        # "example_sample_submission": collect_example_sample_submission_data()
     }
     return data_files_dict
 
@@ -54,7 +54,7 @@ def collect_train_data():
     """
     Download the train data
     """
-    zip_file = '../../data/riiid-test-answer-prediction.zip'
+    zip_file = ZipFile('../../data/riiid-test-answer-prediction.zip', 'r')
     TRAIN_CSV_NAME = "train.csv"
     return open_csv_from_zip(zip_file, TRAIN_CSV_NAME)
 
@@ -63,7 +63,7 @@ def collect_questions_data():
     """
     Download the questions data
     """ 
-    zip_file = '../../data/riiid-test-answer-prediction.zip'
+    zip_file = ZipFile('../../data/riiid-test-answer-prediction.zip', 'r')
     QUESTIONS_CSV_NAME = "questions.csv"
     return open_csv_from_zip(zip_file, QUESTIONS_CSV_NAME)
 
@@ -72,7 +72,7 @@ def collect_lectures_data():
     """
     Download the lectures data
     """
-    zip_file = '../../data/riiid-test-answer-prediction.zip'
+    zip_file = ZipFile('../../data/riiid-test-answer-prediction.zip', 'r')
     LECTURES_CSV_NAME = "lectures.csv"
     return open_csv_from_zip(zip_file, LECTURES_CSV_NAME)
 
@@ -81,16 +81,16 @@ def collect_example_test_data():
     """
     Download the example_test data
     """
-    zip_file = '../../data/riiid-test-answer-prediction.zip'
+    zip_file = ZipFile('../../data/riiid-test-answer-prediction.zip', 'r')
     EXAMPLE_TEST_CSV_NAME = "example_test.csv"
     return open_csv_from_zip(zip_file, EXAMPLE_TEST_CSV_NAME)
 
 
 def collect_example_sample_submission_data():
     """
-    Download the census tract to puma geographic crosswalk data
+    Download the example_sample_submission data
     """
-    zip_file = '../../data/riiid-test-answer-prediction.zip'
+    zip_file = ZipFile('../../data/riiid-test-answer-prediction.zip', 'r')
     EXAMPLE_SAMPLE_SUBMISSION_CSV_NAME = "example_sample_submission.csv"
     return open_csv_from_zip(zip_file, EXAMPLE_SAMPLE_SUBMISSION_CSV_NAME)
 
@@ -183,7 +183,7 @@ def open_csv_from_zip(zip_file, csv_name):
     csv_file_bytes = zip_file.open(csv_name)
     # it seems we have to open the .zip as bytes, but CSV reader requires text
     csv_file_text = TextIOWrapper(csv_file_bytes, encoding="ISO-8859-1")
-    return csv_file_text
+    return csv_file_text, None
 
 
 def open_csv_from_gzip(gzip_file):
