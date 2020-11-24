@@ -25,7 +25,7 @@ def create_database():
 
     # un-comment this line if you already have a database called
     # `opportunity_youth` and you want to drop it
-    execute_sql_script(conn, "01_drop_old_database.sql")
+    # execute_sql_script(conn, "01_drop_old_database.sql")
     execute_sql_script(conn, "02_create_new_database.sql")
 
     conn.close()
