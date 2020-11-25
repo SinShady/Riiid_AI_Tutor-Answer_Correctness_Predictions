@@ -55,7 +55,7 @@ I also engineered features such as the cumulative question count per user and cu
 
  ![RF Confusion Matrix](/reports/figures/rf_matrix.png)
 
- While 60% isn’t the greatest accuracy, on the brightside it is doing much better than my first simple linear regression model, which just predicted everything as correct but achieved an overall accuracy of 64%. This was due to the class imbalance of having many more correct than incorrect answers in the dataset, which I then used the SMOTE method from imblearn library to resample and address the issue.
+ While 60% isn’t the greatest accuracy, on the brightside it is doing much better than my first simple linear regression model, which just predicted almost everything as correct but achieved an overall accuracy of 64%. This was due to the class imbalance of having many more correct than incorrect answers in the dataset, which I then used the SMOTE method from imblearn library to resample and address the issue.
 
   ![FSM Confusion Matrix](/reports/figures/fsm_matrix.png)
 
