@@ -138,7 +138,7 @@ dmypy.json
 .vscode/
 
 # Ignore .DS_Store files
-.DS_Store
+*.DS_Store
 
 # Ignore dask-worker-space
 dask-worker-space/
