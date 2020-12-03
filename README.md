@@ -8,7 +8,7 @@ Predicting Student Performance on future interactions with an AI tutor
 
 ### Notebooks
 - [Final Notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/final/report.ipynb)
-- [Create SQL Database notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/create_SQL_database.ipynb)
+- [Create SQL Database notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/final/create_SQL_database.ipynb)
 
 ### Helpful Resources
 - [Riiid AIEd Challenge 2020 Kaggle](https://www.kaggle.com/c/riiid-test-answer-prediction)
@@ -71,7 +71,7 @@ Note that this may take 10 or more minutes depending on internet speed.
 
 ## Data Download
 
-To download the relevant data and import it into a SQL database, run the [Create SQL Database notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/create_SQL_database.ipynb). Using PostreSQL saves space for data storage and reading, which is useful as the data is large, containing over 100 million rows.
+To download the relevant data and import it into a SQL database, run the [Create SQL Database notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/final/create_SQL_database.ipynb). Using PostreSQL saves space for data storage and reading, which is useful as the data is large, containing over 100 million rows.
 
 The data is hosted on [Kaggle](https://www.kaggle.com/c/riiid-test-answer-prediction) as part of an active competition and can be downloaded [here](https://www.kaggle.com/c/riiid-test-answer-prediction) .
 
