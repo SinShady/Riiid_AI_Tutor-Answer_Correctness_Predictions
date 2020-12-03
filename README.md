@@ -45,7 +45,7 @@ sh src/requirements/install.sh
 
 For Windows computers, you may need to manually ensure that you have installed [Anaconda](https://docs.anaconda.com/anaconda/install/) and [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
 
-### `oy-env` conda Environment
+### `riiid-env` conda Environment
 
 This project relies on you using the [`environment.yml`](environment.yml) file to recreate the `riiid-env` conda environment. To do so, please run the following commands *in your terminal*:
 
