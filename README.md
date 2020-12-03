@@ -8,6 +8,7 @@ Predicting Student Performance on future interactions with an AI tutor
 
 ### Notebooks
 - [Final Notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/final/report.ipynb)
+- [Create SQL Database notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/create_SQL_database.ipynb)
 
 ### Helpful Resources
 - [Riiid AIEd Challenge 2020 Kaggle](https://www.kaggle.com/c/riiid-test-answer-prediction)
