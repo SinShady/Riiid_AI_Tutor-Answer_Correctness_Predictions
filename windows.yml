@@ -1,4 +1,4 @@
-name: learn-env
+name: riiid-env
 channels:
   - anaconda
   - defaults
