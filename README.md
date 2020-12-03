@@ -24,7 +24,7 @@ First, I’d like to talk about some issues in education today. According to dat
 Education was already in a tough place before COVID forced many schools to shutdown and switch to remote learning. I created this map in Tableau with data from [UNESCO Institute](http://uis.unesco.org/).
 
 <b>School Closure Due to COVID-19 May 2020</b>
-![COVID MAP](/reports/figures/COVID_map.png)
+![COVID MAP](/reports/figures/COVID_map_no_labels.png)
 
 ## Education with Artificial Intelligence
  Aiming to rethink traditional ways of learning, [Riiid Labs](https://riiidlabs.ai/) developed Artificial Intelligent tutors. Artificial Intelligent solutions can change the current education system in terms of attendance, engagement, and individualized attention. It could potentially provide equal opportunity in education to anyone with an internet connection. 
