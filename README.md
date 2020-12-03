@@ -4,7 +4,7 @@ Predicting Student Performance on future interactions with an AI tutor
 ## Table of Contents
 
 ### Reports
-- [Presentation PowerPoint](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/reports/AI_Tutors_Student_Predictions_PPT.pdf.pdf)
+- [Presentation PowerPoint](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/reports/AI_Tutors_Student_Predictions_PPT.pdf)
 
 ### Notebooks
 - [Final Notebook](https://github.com/SinShady/Riiid_AI_Tutor-Answer_Correctness_Predictions/blob/main/notebooks/final/report.ipynb)
