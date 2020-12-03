@@ -157,7 +157,7 @@ Count of unique values in each column
 
 ## Data Engineering
 
-A I am only predicting student answers on questions, there was no need for the lectures data. I joined the train and questions tables on the `content_id` and `question` columns and dropped the columns `user_answer` (since real training data could not have this column), `tags`, and `content_id`.
+As I am only predicting student answers on questions, there was no need for the lectures data. I joined the train and questions tables on the `content_id` and `question` columns and dropped the columns `user_answer` (since real testing data could not have this column), `tags`, and `content_id`.
 
 Since the original features were not enough for my model to make accurate predictions, I engineered the following features.
 - `user_question_count` - the cumulative count of questions each user has answered
