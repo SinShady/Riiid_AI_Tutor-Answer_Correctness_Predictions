@@ -186,13 +186,13 @@ To improve my model performance, I also engineered features such as the cumulati
 ![Prior Explanations](/reports/figures/Question_difficulty.png)
 
 # Modeling
- As the dataset of over 100 million student interactions was too big for my sole computer to handle, I used a subset - 1 million interactions to train my models. After trying numerous types of models such as Logistic Regression and K Nearest Neighbors as well as a few boosting ensembles, my best performing model is a Random Forest Classifier from the Scikit-learn library with an overall accuracy of 68%
+ As the dataset of over 100 million student interactions was too big for my sole computer to handle, I used a subset - 1 million interactions to train my models. After trying numerous types of models such as Logistic Regression and K Nearest Neighbors as well as a few boosting ensembles, my best performing model is a Random Forest Classifier from the Scikit-learn library with an overall accuracy of 67%
 
 Here is a confusion matrix representing the results of my first simple model. We can see that it is over predicting correctly answered but underpredicting incorrect answers. This was due to the class imbalance of having many more correct than incorrect answers in the dataset. To address the issue, I used the SMOTE method from imblearn library to resample the training data.
 
   ![FSM Confusion Matrix](/reports/figures/fsm_matrix.png)
 
-Here is a confusion matrix of the final model, providing more details on how the model is performing. We are getting 64% accuracy on the correct answer predictions and 65% accuracy on the incorrect answer predictions
+Here is a confusion matrix of the final model, providing more details on how the model is performing. We are getting 64% accuracy on the correct answer predictions and 68% accuracy on the incorrect answer predictions
 
  ![RF Confusion Matrix](/reports/figures/random_forest_matrix.png)
 
