@@ -78,7 +78,7 @@ The data is hosted on [Kaggle](https://www.kaggle.com/c/riiid-test-answer-predic
 
 ## Data Understanding
 
-Our data contains 3 relevant tables for this project - train, questions, and lectures
+The data contains 3 relevant tables for this project - train, questions, and lectures
 
 <b>Description of Features in Train</b>
 
