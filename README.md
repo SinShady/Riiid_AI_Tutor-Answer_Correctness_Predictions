@@ -21,7 +21,7 @@ Predicting Student Performance on future interactions with an AI tutor
 # Project Overview
 
 ## Issues in Education
-First, I’d like to talk about some issues in education today. According to data gathered by the [UNESCO Institute](http://uis.unesco.org/), in 2018, 260 million children weren’t attending school. Of the children that we’re attending school, more than half of young students around the globe did not meet minimum reading and math standards. This is in part due to the fact that many students don’t have access to personalized learning.
+First, I’d like to talk about some issues in education today. According to data gathered by the [UNESCO Institute](http://uis.unesco.org/), in 2018, 260 million children weren’t attending school. Of the children that were attending school, more than half of young students around the globe did not meet minimum reading and math standards. This is in part due to the fact that many students do not have access to personalized learning.
 
 Education was already in a tough place before COVID forced many schools to shutdown and switch to remote learning. I created this map in Tableau with data from [UNESCO Institute](http://uis.unesco.org/).
 
@@ -78,7 +78,7 @@ The data is hosted on [Kaggle](https://www.kaggle.com/c/riiid-test-answer-predic
 
 ## Data Understanding
 
-Our data contains 3 relevant tables for our project - train, questions, and lectures
+Our data contains 3 relevant tables for this project - train, questions, and lectures
 
 <b>Description of Features in Train</b>
 
@@ -139,7 +139,7 @@ Categorical Features: `correct_answer`, `part`
 
 <b>Description of Features in Lectures</b>
 
-Note - Wont be using this table for our model
+Note - Wont be using this table for the model
 
 `lecture_id` - foreign key for the train/test content_id column, when the content type is lecture (1).
 
@@ -166,15 +166,15 @@ Since the original features were not enough for my model to make accurate predic
 
 ## Data Visualization
 
-This is the distribution of our target variable - answers - in the Ednet Database. We can see students are getting over twice as many answers correct than incorrect.
+This is the distribution of the target variable - answers - in the Ednet Database. We can see students are getting over twice as many answers correct than incorrect.
 
 ![Class Distribution](/reports/figures/class_imbalance.png)
 
-Features in the dataset include cumulative timestamps per user, and prior question elapsed time, which is shown here as a violin plot. The widest part shows how long most questions took to answer, which is around 18 seconds. The next wide part is at 0 since the prior question elapsed time for the first question for every user is 0. We can see that most users tend to get the first question wrong. The small white dot shows the average time per question – 20 seconds. Overall, the shapes of both violins are very similar which suggests that this feature will only help a little in predicting student answers.
+Features in the dataset include cumulative timestamps per user, and prior question elapsed time, which is shown here as a violin plot. The widest part shows how long most questions took to answer, which is around 18 seconds. The next wide part is at 0 since the prior question elapsed time for the first question for every user is 0. Most users tend to get the first question wrong. The small white dot shows the average time per question – 20 seconds. Overall, the shapes of both violins are very similar which suggests that this feature will only help a little in predicting student answers.
 
 ![Prior Question Elapsed Time](/reports/figures/prior_question_time_violin.png)
 
-Another feature in the dataset was topics numbered from 1-7 shown by this plot. Ednet has not provided the information for which number belongs to which topic, but that’s understandable given consideration of student privacy. Here we can see some topics have a greater class imbalance than others, which means this feature will help our model more accurately predict student outcomes. For example, students on average seem to be performing better on topic 1 than on topic 4. Topic 5 seems to be very popular.
+Another feature in the dataset was topics numbered from 1-7 shown by this plot. Ednet has not provided the information for which number belongs to which topic, but that’s understandable given consideration of student privacy. Some topics have a greater class imbalance than others, which means this feature will help the model more accurately predict student outcomes. For example, students on average seem to be performing better on topic 1 than on topic 4. Topic 5 seems to be very popular.
 
 ![Parts](/reports/figures/parts.png)
 
@@ -198,7 +198,7 @@ Here is a confusion matrix of the final model, providing more details on how the
  ![RF Confusion Matrix](/reports/figures/random_forest_matrix.png)
 
 # Conclusion
-In conclusion, we can use these predictions to improve and prove the success of AI tutors. Knowing how the student is likely to perform in the future can give better insight for the AI to individualize education and personalize the learning experience for each student to achieve the best results. I strongly believe that if features about student demographics were included in the database, the model accuracy would greatly improve and student success in underprivileged areas could be addressed and improved by the AI tutor as well.
+In conclusion, these predictions can be used to improve and prove the success of AI tutors. Knowing how the student is likely to perform in the future can give better insight for the AI to individualize education and personalize the learning experience for each student to achieve the best results. I strongly believe that if features about student demographics were included in the database, the model accuracy would greatly improve and student success in underprivileged areas could be addressed and improved by the AI tutor as well.
 
 AI tutors could be a much needed change in our education system to provide equal opportunity and improve the success of students around the globe.
 
